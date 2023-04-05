@@ -1,0 +1,11 @@
+logging:
+  level:
+    root: info
+  file:
+    path: /Users/yangzhou/log
+server:
+  port: 8888
+spring:
+  application:
+    name: springboot-logback-demo
+debug: false
