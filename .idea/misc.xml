@@ -208,6 +208,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/springboot01_hello/pom.xml" />
         <option value="$PROJECT_DIR$/springboot02_mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot03_banner/pom.xml" />
       </list>
     </option>
   </component>
