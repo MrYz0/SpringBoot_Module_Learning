@@ -11,7 +11,7 @@
     <groupId>com.yz</groupId>
     <artifactId>springboot_exception</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot06_exception</name>
+    <name>SpringBoot接口 - 如何统一异常处理</name>
     <description>springboot06_exception</description>
     <properties>
         <java.version>1.8</java.version>
