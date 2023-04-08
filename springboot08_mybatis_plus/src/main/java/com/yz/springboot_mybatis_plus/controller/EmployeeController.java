@@ -80,7 +80,7 @@ public class EmployeeController {
         }
     }
 
-    // 改
+    // 修改
     @PutMapping
     public Result edit(@RequestBody Employee employee){
         boolean result = employeeService.updateById(employee);
