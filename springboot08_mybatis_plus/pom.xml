@@ -11,7 +11,7 @@
     <groupId>com.yz</groupId>
     <artifactId>springboot_mybatis_plus</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SpringBoot集成MySQL - MyBatis-Plus方式</name>
+    <name>SpringBoot集成MySQL-MyBatis-Plus方式</name>
     <description>springboot08_mybatis_plus</description>
     <properties>
         <java.version>1.8</java.version>
