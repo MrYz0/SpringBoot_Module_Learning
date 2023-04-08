@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yz.springboot07_mybatis.mapper.EmployeeMapper">
+
+    <resultMap id="EmployeeResult" type="com.yz.springboot07_mybatis.domain.Employee">
+        <id property="employeeId" column="employee_id" />
+        <result property="employeeName" column="employee_name" />
+        <result property="date" column="date" />
+        <result property="deptId" column="dept_id" />
+        <association property="dept" resultMap="DeptResult" />
+    </resultMap>
+
+    <resultMap id="DeptResult" type="com.yz.springboot07_mybatis.domain.Dept">
+        <id property="deptId" column="dept_id" />
+        <result property="deptName" column="dept_name" />
+    </resultMap>
+
+    <sql id="selectEmployee">
+        select employee_id, employee_name, date, dept_id from t_employee
+    </sql>
+    <insert id="save" useGeneratedKeys="true" keyColumn="employeeId" parameterType="com.yz.springboot07_mybatis.domain.Employee">
+    insert into t_employee
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+        <if test="employeeName != null and employeeName != ''">employee_name,</if>
+        <if test="date != null">date,</if>
+        <if test="deptId != null">dept_id,</if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+        <if test="employeeName != null and employeeName != ''">#{employeeName},</if>
+        <if test="date != null">#{date},</if>
+        <if test="deptId != null">#{deptId},</if>
+    </trim>
+
+    </insert>
+    <update id="update" parameterType="com.yz.springboot07_mybatis.domain.Employee">
+        update t_employee
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="employeeName != null and employeeName != ''"> employee_name = #{employeeName},</if>
+            <if test="deptId != null">dept_id = #{deptId},</if>
+        </trim>
+        where employee_id = #{employeeId}
+    </update>
+
+    <select id="list" resultMap="EmployeeResult">
+        select t1.employee_id, t1.employee_name, t1.date, t1.dept_id ,t2.dept_id,t2.dept_name
+        from t_employee t1
+                 left join t_dept t2 on t1.dept_id = t2.dept_id
+    </select>
+
+</mapper>
