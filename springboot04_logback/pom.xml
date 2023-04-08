@@ -11,7 +11,7 @@
 	<groupId>com.yz</groupId>
 	<artifactId>springboot_logback</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot04_logback</name>
+	<name>SpringBoot入门-添加Logback日志</name>
 	<description>springboot04_logback</description>
 	<properties>
 		<java.version>1.8</java.version>
