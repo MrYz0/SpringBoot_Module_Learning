@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yz.springboot_mybatis_plus.mapper.EmployeeMapper">
+
+    <resultMap id="BaseResultMap" type="com.yz.springboot_mybatis_plus.domain.Employee">
+            <id property="employeeId" column="employee_id" jdbcType="INTEGER"/>
+            <result property="employeeName" column="employee_name" jdbcType="VARCHAR"/>
+            <result property="date" column="date" jdbcType="TIMESTAMP"/>
+            <result property="deptId" column="dept_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        employee_id,employee_name,date,
+        dept_id
+    </sql>
+</mapper>
