@@ -11,7 +11,7 @@
 	<groupId>com.yz</groupId>
 	<artifactId>springboot_banner</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot03_banner</name>
+	<name>SpringBoot入门-定制自己的Banner</name>
 	<description>springboot03_banner</description>
 	<properties>
 		<java.version>1.8</java.version>
