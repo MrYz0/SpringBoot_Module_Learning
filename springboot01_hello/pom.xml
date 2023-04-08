@@ -11,7 +11,7 @@
     <groupId>com.yz</groupId>
     <artifactId>springboot_hello</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SpringBoot入门 - SpringBoot HelloWorld</name>
+    <name>SpringBoot入门-SpringBoot HelloWorld</name>
     <description>springboot01_hello</description>
     <properties>
         <java.version>1.8</java.version>
