@@ -11,7 +11,7 @@
 	<groupId>com.yz</groupId>
 	<artifactId>springboot_mvc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot02_mvc</name>
+	<name>SpringBoot入门-对Hello world进行MVC分层</name>
 	<description>springboot02_mvc</description>
 	<properties>
 		<java.version>1.8</java.version>
