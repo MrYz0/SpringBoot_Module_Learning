@@ -11,7 +11,7 @@
 	<groupId>com.yz</groupId>
 	<artifactId>springboot_restful</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot05_restful</name>
+	<name>SpringBoot接口-如何统一接口封装</name>
 	<description>springboot05_restful</description>
 	<properties>
 		<java.version>1.8</java.version>
