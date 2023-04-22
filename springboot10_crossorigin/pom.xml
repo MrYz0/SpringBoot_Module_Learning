@@ -11,7 +11,7 @@
 	<groupId>com.yz</groupId>
 	<artifactId>crossorigin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot10_crossorigin</name>
+	<name>SpringBoot集成-后端跨域问题</name>
 	<description>springboot10_crossorigin</description>
 	<properties>
 		<java.version>1.8</java.version>
