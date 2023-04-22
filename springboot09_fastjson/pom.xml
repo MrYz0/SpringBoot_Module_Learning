@@ -11,7 +11,7 @@
     <groupId>com.yz</groupId>
     <artifactId>springboot_fastjson</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot09_fastjson</name>
+    <name>SpringBoot集成-ali-fastjson</name>
     <description>springboot09_fastjson</description>
     <properties>
         <java.version>1.8</java.version>
