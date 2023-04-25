@@ -31,6 +31,6 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public Result error(CustomException e){
         e.printStackTrace();
-        return Result.ok().message(e.getMsg()).code(e.getCode());
+        return Result.ok().message(e.getMessage()).code(e.getCode());
     }
 }

@@ -18,11 +18,6 @@ public class CustomException extends RuntimeException{
      */
     private String message;
 
-    public CustomException( Integer code,String message){
-        this.code = code;
-        this.message = message;
-    }
-
     public CustomException(ResponseEnum responseEnum){
         this.code = responseEnum.getCode();
         this.message = responseEnum.getMessage();
