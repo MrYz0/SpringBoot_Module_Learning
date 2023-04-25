@@ -1,5 +1,6 @@
 package com.yz.springboot_exception.config.exception;
 
+import com.yz.springboot_exception.utils.ResponseEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -15,5 +16,26 @@ public class CustomException extends RuntimeException{
     /**
      * 返回消息
      */
-    private String msg;
+    private String message;
+
+    public CustomException( Integer code,String message){
+        this.code = code;
+        this.message = message;
+    }
+
+    public CustomException(ResponseEnum responseEnum){
+        this.code = responseEnum.getCode();
+        this.message = responseEnum.getMessage();
+    }
+
+    /**
+     *
+     * @param resultCodeEnum 接收枚举类型
+     * @param cause 原始异常对象
+     */
+    public CustomException(ResponseEnum resultCodeEnum, Throwable cause) {
+        super(cause);
+        this.message = resultCodeEnum.getMessage();
+        this.code = resultCodeEnum.getCode();
+    }
 }
