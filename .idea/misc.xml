@@ -217,6 +217,7 @@
         <option value="$PROJECT_DIR$/springboot09_fastjson/pom.xml" />
         <option value="$PROJECT_DIR$/springboot10_crossorigin/pom.xml" />
         <option value="$PROJECT_DIR$/springboot11_oss/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot12_easy_excel/pom.xml" />
       </list>
     </option>
   </component>

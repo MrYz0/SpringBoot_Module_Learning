@@ -1,11 +1,22 @@
-logging:
-  level:
-    root: info
-  file:
-    path: /Users/yangzhou/log
 server:
   port: 8888
 spring:
+  profiles:
+    active: druid #设定为 开发环境
+#    active: druid-pro #设定为 生产环境
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot?characterEncoding=utf-8
+    username: root
+    password: 12345678
   application:
     name: springboot-logback-demo
-debug: false
+#========Mybatis-plus============
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+# 日志配置
+logging:
+  level:
+    com.yz: debug
+    org.springframework: warn

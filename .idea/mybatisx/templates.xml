@@ -6,7 +6,7 @@
         <option name="generateConfig">
           <GenerateConfig>
             <option name="annotationType" value="MYBATIS_PLUS3" />
-            <option name="basePackage" value="com.yz.crossorigin" />
+            <option name="basePackage" value="com.yz.springboot_logback" />
             <option name="basePath" value="src/main/java" />
             <option name="classNameStrategy" value="camel" />
             <option name="encoding" value="UTF-8" />
@@ -15,8 +15,8 @@
             <option name="ignoreFieldSuffix" value="" />
             <option name="ignoreTablePrefix" value="t_" />
             <option name="ignoreTableSuffix" value="" />
-            <option name="moduleName" value="crossorigin" />
-            <option name="modulePath" value="$PROJECT_DIR$/springboot10_crossorigin" />
+            <option name="moduleName" value="springboot_logback" />
+            <option name="modulePath" value="$PROJECT_DIR$/springboot04_logback" />
             <option name="moduleUIInfoList">
               <list>
                 <ModuleInfoGo>
@@ -26,7 +26,7 @@
                   <option name="encoding" value="${domain.encoding}" />
                   <option name="fileName" value="${domain.fileName}Mapper" />
                   <option name="fileNameWithSuffix" value="${domain.fileName}Mapper.xml" />
-                  <option name="modulePath" value="$PROJECT_DIR$/springboot10_crossorigin" />
+                  <option name="modulePath" value="$PROJECT_DIR$/springboot04_logback" />
                   <option name="packageName" value="mapper" />
                 </ModuleInfoGo>
                 <ModuleInfoGo>
@@ -36,7 +36,7 @@
                   <option name="encoding" value="${domain.encoding}" />
                   <option name="fileName" value="${domain.fileName}ServiceImpl" />
                   <option name="fileNameWithSuffix" value="${domain.fileName}ServiceImpl.java" />
-                  <option name="modulePath" value="$PROJECT_DIR$/springboot10_crossorigin" />
+                  <option name="modulePath" value="$PROJECT_DIR$/springboot04_logback" />
                   <option name="packageName" value="${domain.basePackage}.service.impl" />
                 </ModuleInfoGo>
                 <ModuleInfoGo>
@@ -46,7 +46,7 @@
                   <option name="encoding" value="${domain.encoding}" />
                   <option name="fileName" value="${domain.fileName}Mapper" />
                   <option name="fileNameWithSuffix" value="${domain.fileName}Mapper.java" />
-                  <option name="modulePath" value="$PROJECT_DIR$/springboot10_crossorigin" />
+                  <option name="modulePath" value="$PROJECT_DIR$/springboot04_logback" />
                   <option name="packageName" value="${domain.basePackage}.mapper" />
                 </ModuleInfoGo>
                 <ModuleInfoGo>
@@ -56,28 +56,28 @@
                   <option name="encoding" value="${domain.encoding}" />
                   <option name="fileName" value="${domain.fileName}Service" />
                   <option name="fileNameWithSuffix" value="${domain.fileName}Service.java" />
-                  <option name="modulePath" value="$PROJECT_DIR$/springboot10_crossorigin" />
+                  <option name="modulePath" value="$PROJECT_DIR$/springboot04_logback" />
                   <option name="packageName" value="${domain.basePackage}.service" />
                 </ModuleInfoGo>
               </list>
             </option>
-            <option name="needToStringHashcodeEquals" value="true" />
             <option name="needsComment" value="true" />
             <option name="needsModel" value="true" />
-            <option name="relativePackage" value="domain" />
+            <option name="relativePackage" value="pojo" />
             <option name="superClass" value="" />
             <option name="tableUIInfoList">
               <list>
                 <TableUIInfo>
                   <option name="className" value="User" />
-                  <option name="tableName" value="t_user" />
+                  <option name="tableName" value="user" />
                 </TableUIInfo>
               </list>
             </option>
             <option name="templatesName" value="mybatis-plus3" />
+            <option name="useLombokPlugin" value="true" />
           </GenerateConfig>
         </option>
-        <option name="moduleName" value="crossorigin" />
+        <option name="moduleName" value="springboot_logback" />
         <option name="projectPath" value="$PROJECT_DIR$" />
         <option name="templateName" value="mybatis-plus3" />
       </TemplateContext>

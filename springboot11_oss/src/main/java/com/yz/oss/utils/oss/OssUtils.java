@@ -57,8 +57,6 @@ public class OssUtils {
                 ossClient.shutdown();
             }
         }
-
-
     }
 
     public List<String> uploadArrayFile(MultipartFile[] files){
