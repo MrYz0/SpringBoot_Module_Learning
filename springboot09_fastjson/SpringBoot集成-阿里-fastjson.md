@@ -1,4 +1,4 @@
-# SpringBoot 整合fastjson2
+# SpringBoot 整合 fastjson2
 
 # 1. 引入fastJson2依赖
 
@@ -94,12 +94,15 @@ public class Student {
 - 代码
 
 ```java
-@Test
-void test4(){
-   String result = "{\"name\":\"小明\"}";
-    JSONObject object = JSON.parseObject(result);
-    System.out.println(object.get("name")); 
-}
+    @Test
+    void test4(){
+        Student student = new Student();
+        student.setName("yz");
+        String jsonString = JSON.toJSONString(student);
+        System.out.println("jsonString = " + jsonString);
+        JSONObject object = JSON.parseObject(jsonString);
+        System.out.println("name："+object.get("name"));
+    }
 ```
 
 - 输出结果
