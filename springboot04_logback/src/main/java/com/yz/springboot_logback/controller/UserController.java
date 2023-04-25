@@ -21,7 +21,6 @@ public class UserController {
     @GetMapping("list")
     public List<User> getUsers(){
 
-        int i = 10/0;
         List<User> list = userService.list();
         return list;
     }

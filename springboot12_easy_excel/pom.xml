@@ -11,7 +11,7 @@
 	<groupId>com.yz</groupId>
 	<artifactId>springboot_easy_excel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot12_easy_excel</name>
+	<name>SpringBoot12 - 整合EasyExcel</name>
 	<description>springboot12_easy_excel</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -45,6 +45,13 @@
 			<version>2.1.1</version>
 		</dependency>
 
+
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -58,8 +65,14 @@
 
 		<dependency>
 			<groupId>com.baomidou</groupId>
-			<artifactId>mybatis-plus-extension</artifactId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
 			<version>3.5.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.29</version>
 		</dependency>
 
 
@@ -80,6 +93,16 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<!-- 项目打包时会将java目录中的*.xml文件也进行打包 -->
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
 	</build>
 
 </project>
