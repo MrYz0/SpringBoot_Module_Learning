@@ -4,6 +4,7 @@ package com.yz.springboot_exception.controller;
 import com.yz.springboot_exception.config.exception.CustomException;
 import com.yz.springboot_exception.domain.User;
 import com.yz.springboot_exception.service.UserService;
+import com.yz.springboot_exception.utils.ResponseEnum;
 import com.yz.springboot_exception.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -23,7 +24,7 @@ public class UserController {
         try {
             int i = 10/0;
         }catch (Exception e){
-            throw new CustomException(20001,"执行了自定义异常");
+            throw new CustomException(ResponseEnum.SERVICE_ERROR);
         }
         List<User> list = userService.list();
         return Result.ok(list);

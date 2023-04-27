@@ -1,0 +1,29 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot?characterEncoding=utf-8
+    username: root
+    password: 12345678
+  jackson:
+    default-property-inclusion: non_null # JSON处理时忽略非空字段
+  redis:
+    host: localhost
+    password:
+    lettuce:
+      pool:
+        max-active: 8 # 最大连接
+        max-idle: 8   # 最大空闲连接
+        min-idle: 0   # 最小空闲连接
+        max-wait: 100 # 连接等待时间
+
+#========Mybatis-plus============
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl   #查看日志
+
+logging:
+  level:
+    com.yz: debug
+

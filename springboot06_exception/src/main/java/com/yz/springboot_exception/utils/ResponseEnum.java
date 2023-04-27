@@ -8,7 +8,9 @@ import lombok.Getter;
 public enum ResponseEnum {
 
     SUCCESS(200,"成功"),
-    Fail(201,"失败");
+    Fail(201,"失败"),
+    SERVICE_ERROR(20001,"服务异常");
+
     /**
      * 其它业务状态码
      * SERVICE_ERROR(2012, "服务异常"),
