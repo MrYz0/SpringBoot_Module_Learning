@@ -219,6 +219,7 @@
         <option value="$PROJECT_DIR$/springboot11_oss/pom.xml" />
         <option value="$PROJECT_DIR$/springboot12_easy_excel/pom.xml" />
         <option value="$PROJECT_DIR$/springboot13_redis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot14_delivery/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,6 @@
+aliyun:
+  logistics:
+    host: https://api09.aliyun.venuscn.com
+    appcode: 1214b9361c7544e3bfa8d46971117f19
+server:
+  port: 9000
