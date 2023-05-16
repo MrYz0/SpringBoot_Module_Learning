@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class LogisticsUtils {
 
-    public static final String appcode = "1214b9361c7544e3bfa8d46971117f19";
+    public static final String appcode = "";
 
     public static String getLogistics(String type,String shipNumber) throws Exception {
         String host = "https://api09.aliyun.venuscn.com";
